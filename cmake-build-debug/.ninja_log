@@ -1,0 +1,18 @@
+# ninja log v5
+0	395	1684616304014417153	CMakeFiles/tictactoe.dir/src/Board.cpp.o	7b23f897a88bf5b6
+1	415	1684684507944533774	CMakeFiles/tictactoe.dir/src/SFMLView.cpp.o	d983b0b06159305c
+9	66	1683896550834486051	tic_tac_toe	518856b0f84efa54
+1	403	1684684507932533927	CMakeFiles/tictactoe.dir/src/main.cpp.o	3f12f0a865931510
+1	357	1684629469566214679	CMakeFiles/tictactoe.dir/src/AI.cpp.o	aba017ffbb87315c
+1	15	1684686312722165254	build.ninja	14c2d8edeba9fafd
+1	378	1684684507908534234	CMakeFiles/tictactoe.dir/src/SFMLController.cpp.o	5efc1ae01cbe3b58
+0	2	0	clean	56b7491252722d7d
+415	488	1684684508016532853	tictactoe	321ed30d79e8561c
+1	382	1684684507908534234	CMakeFiles/tictactoe.dir/src/MainGame.cpp.o	cb8318a8e844d807
+2	359	1684686319510082869	CMakeFiles/tictactoe.dir/src/AI.cpp.o	ec06b822b14bfc16
+1	397	1684686319550082383	CMakeFiles/tictactoe.dir/src/Board.cpp.o	eb26265ecfee90c2
+1	402	1684686319554082335	CMakeFiles/tictactoe.dir/src/MainGame.cpp.o	a55099daac1ad6e0
+1	437	1684686319590081898	CMakeFiles/tictactoe.dir/src/main.cpp.o	83b7ab9901445290
+397	755	1684686319906078064	CMakeFiles/tictactoe.dir/src/SFMLController.cpp.o	ac572fe4d92d537
+359	762	1684686319914077967	CMakeFiles/tictactoe.dir/src/SFMLView.cpp.o	9b726f32b00ed7bf
+762	834	1684686319986077094	tictactoe	321ed30d79e8561c
