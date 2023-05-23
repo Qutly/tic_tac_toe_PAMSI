@@ -56,7 +56,7 @@ int AI::minimax(Board& board, int depth, bool isMaximizing, int alpha, int beta)
                     board.setVal(i, j, NO_VAL);
                     bestScore = std::max(score, bestScore);
                     alpha = std::max(alpha, bestScore);
-                    if (bestScore >= beta) {
+                    if(beta <= alpha) {
                         return bestScore;
                     }
                 }
@@ -73,7 +73,7 @@ int AI::minimax(Board& board, int depth, bool isMaximizing, int alpha, int beta)
                     board.setVal(i, j, NO_VAL);
                     bestScore = std::min(score, bestScore);
                     beta = std::min(beta, bestScore);
-                    if (bestScore <= alpha) {
+                    if(beta <= alpha) {
                         return bestScore;
                     }
                 }

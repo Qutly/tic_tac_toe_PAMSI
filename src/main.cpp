@@ -7,7 +7,7 @@ int main() {
     SfmlView view(board, mainGame);
     SfmlController ctrl(mainGame, board, view);
 
-    sf::RenderWindow window(sf::VideoMode(board.getSize() * 130, board.getSize() * 130), "Tic Tac Toe",
+    sf::RenderWindow window(sf::VideoMode(board.getSize() * 190, board.getSize() * 190), "Tic Tac Toe",
                             sf::Style::Titlebar | sf::Style::Close & ~sf::Style::Resize);
 
     sf::VideoMode desktop = sf::VideoMode::getDesktopMode();

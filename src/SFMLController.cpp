@@ -5,7 +5,7 @@ void SfmlController::play(sf::Event event, SfmlView& view, sf::RenderWindow &win
     int gridSize = _board.getSize();
     int rv = _board.checkVictory();
 
-    const float squareSize = 65.f;
+    const float squareSize = 85.f;
     const float squareSpacing = 5.f;
     float totalWidth = (gridSize * squareSize) + ((gridSize - 1) * squareSpacing);
     float totalHeight = (gridSize * squareSize) + ((gridSize - 1) * squareSpacing);

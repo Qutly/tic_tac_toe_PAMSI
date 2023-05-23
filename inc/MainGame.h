@@ -72,7 +72,7 @@ public:
         } while (!isValid);
         if(_board.getSize() == 3) depth = 3;
         else if(_board.getSize() == 5) depth = 7;
-        else if(_board.getSize() == 7) depth = 4;
+        else if(_board.getSize() == 7) depth = 6;
         _ai.init(_aiPlayer, depth);
         printf("\n\n");
     }

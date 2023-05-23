@@ -10,7 +10,7 @@ void SfmlView::draw(sf::RenderWindow &window) {
     sf::Text textPlayerTurn;
     sf::RectangleShape squares[gridSize][gridSize];
 
-    const float squareSize = 65.f;
+    const float squareSize = 85.f;
     const float squareSpacing = 5.f;
     float totalWidth = (gridSize * squareSize) + ((gridSize - 1) * squareSpacing);
     float totalHeight = (gridSize * squareSize) + ((gridSize - 1) * squareSpacing);
@@ -52,10 +52,10 @@ void SfmlView::draw(sf::RenderWindow &window) {
 
         if (_mainGame.getCurrentPlayer() == _mainGame.getAiPlayer()) {
             textPlayerTurn.setString("Computer's Turn");
-            textPlayerTurn.setPosition(window.getSize().x / 2.f - textPlayerTurn.getLocalBounds().width / 2.f, 15);
+            textPlayerTurn.setPosition(window.getSize().x / 2.f - textPlayerTurn.getLocalBounds().width / 2.f, 25);
         } else {
             textPlayerTurn.setString("Your Turn");
-            textPlayerTurn.setPosition(window.getSize().x / 2.f - textPlayerTurn.getLocalBounds().width / 2.f, 15);
+            textPlayerTurn.setPosition(window.getSize().x / 2.f - textPlayerTurn.getLocalBounds().width / 2.f, 25);
         }
 
         textGameOver.setFont(font);
@@ -66,15 +66,15 @@ void SfmlView::draw(sf::RenderWindow &window) {
         if (whichMarkWon == TIE_VAL) {
             textPlayerTurn.setString("");
             textGameOver.setString("TIE!");
-            textGameOver.setPosition(window.getSize().x / 2.f - textGameOver.getLocalBounds().width / 2.f, 15);
+            textGameOver.setPosition(window.getSize().x / 2.f - textGameOver.getLocalBounds().width / 2.f, 25);
         } else if (whichMarkWon == X_VAL) {
             textPlayerTurn.setString("");
             textGameOver.setString("Player 'X' Wins!");
-            textGameOver.setPosition(window.getSize().x / 2.f - textGameOver.getLocalBounds().width / 2.f, 15);
+            textGameOver.setPosition(window.getSize().x / 2.f - textGameOver.getLocalBounds().width / 2.f, 25);
         } else if (whichMarkWon == O_VAL) {
             textPlayerTurn.setString("");
             textGameOver.setString("Player 'O' Wins!");
-            textGameOver.setPosition(window.getSize().x / 2.f - textGameOver.getLocalBounds().width / 2.f, 15);
+            textGameOver.setPosition(window.getSize().x / 2.f - textGameOver.getLocalBounds().width / 2.f, 25);
         }
         window.draw(textPlayerTurn);
         window.draw(textGameOver);
